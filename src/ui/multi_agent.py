@@ -56,7 +56,11 @@ def push_to_github():
         "GITHUB_REPO_URL": os.environ["GITHUB_REPO_URL"],
         "GITHUB_USER_EMAIL": os.environ["GITHUB_USER_EMAIL"],
     }
-    subprocess.run(["bash", "push_to_github.sh"], env=env, check=True)
+    subprocess.run(
+        ["C:\\Program Files\\Git\\git-bash.exe", "push_to_github.sh"], 
+        env=env,
+        check=True
+    )
 
 
 async def run_multi_agent(input: str):
